@@ -1,0 +1,323 @@
+/*
+Theme Name: Accelerate Marketing
+Author: The Skillcrush Team
+Author URI: http://skillcrush.com
+Description: This theme is for use in Skillcrush 203.
+Version: 2.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: accelerate
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/** Clearfix **/
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+	table-layout: fixed;
+}
+
+.clearfix:after {
+	clear: both;
+}
+/** end CSS reset **/
+
+/** theme styles start here! **/
+
+/* MAIN STYLES */
+header,
+footer,
+section,
+aside,
+time,
+article {
+   display: block;
+}
+a {
+   text-decoration: none;
+   color: inherit;
+}
+b,
+strong {
+   font-weight: bold;
+   font-weight: 700;
+}
+dfn,
+cite,
+em,
+i {
+   font-style: italic;
+}
+p {
+   color: #3b3b3b;
+   font: 17px/1.65 'Open Sans', Arial, sans-serif;
+   margin: 1em auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 2em 0 .5em;
+   font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+}
+h1 {
+   font-size: 24px;
+   font-size: 1.5em;
+   line-height: 2.25;
+}
+h2 {
+   font-size: 20px;
+   font-size: 1.25em;
+   line-height: 2;
+}
+h3 {
+   font-size: 18px;
+   font-size: 1.125em;
+   line-height: 1.75;
+}
+h4 {
+	font-size: 16px;
+    font-size: 1em;
+}
+ h5 {
+	 font-size: 16px;
+	 font-size: 1em;
+	 text-transform: uppercase;
+}
+ul {
+   list-style: disc;
+   margin: 1em 0 1em 1.125em;
+}
+blockquote {
+   margin: 2em;
+   padding: 0 1em;
+}
+blockquote p {
+   font: 1.6em/1.6 'Montserrat', 'Open Sans', Arial, sans-serif;
+}
+blockquote p:before {
+   content: '“';
+   font: 1.5em/1 'Montserrat', 'Open Sans', Arial, sans-serif;
+   margin-left: -.6em;
+   padding-right: .25em;
+}
+blockquote p:after {
+   content: '”';
+   font: 1.5em/1 'Montserrat', 'Open Sans', Arial, sans-serif;
+   margin-right: -1em;
+   padding-left: .25em;
+}
+blockquote footer {
+   font: 1.25em/1 'Montserrat', 'Open Sans', Arial, sans-serif;
+}
+blockquote footer:before {
+   content: '—';
+}
+figure, img {
+   max-width: 100%;
+   height: auto;
+}
+iframe {
+   width: 100%;
+}
+input {
+	font: 1em 'OpenSans', Arial, sans-serif;
+	line-height: 2;
+	height: 2.3125em;
+	border: 1px solid #BFBFBF;
+	margin: 0;
+	padding: 0.3em 0.625em;
+	background: #fff;
+	vertical-align: middle;
+}
+input[type="button"],
+input[type="submit"] {
+	font: 700 1em/1 'Montserrat', 'OpenSans', Arial, sans-serif;
+	color: #fff;
+	background: #333;
+	border: none;
+	padding: 1em 3.75em;
+	text-align: center;
+}
+/* End MAIN STYLES */
+
+/* Custom Styles */
+
+nav {
+	width: 100%;
+	height: auto;
+}
+
+nav ul li {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: column;
+}
+
+nav ul li a {
+	  font-family: 'Montserrat';
+	  font-size: 1.5em;
+	  color: black;
+	  text-decoration: none;
+	  text-transform:  uppercase;
+	}
+
+	/* Footer */
+footer {
+		background-color: #7A9E9F;
+	  height: 40px;
+	  width: 100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+		margin-bottom:  0;
+		padding-bottom:  0;
+		}
+
+footer p {
+		display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  text-transform: uppercase;
+		}
+
+/* Front Page */
+.front-page {
+
+}
+
+.top-section {
+	background: url("img/background.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+	width:100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.intro {
+
+	width: 100%;
+	height:auto;
+	color: black;
+	width: 40%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.preview-of-work {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	Height: 500px;
+	background-color: #7A9E9F;
+}
+
+.preview-of-work ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	flex-flow: column;
+}
+
+.preview-of-work ul li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+/* Page */
+.page {
+	background-color: #7A9E9F;	
+}
+/* About Page */
+.about-content {
+	background-color: #7A9E9F;
+	display: flex;
+	align-items: center;
+	flex-flow: column;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+	.photo-of-me img {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  width: 60%;
+	  height:auto;
+	  border-radius: 30%;
+	  padding: 100px;
+	}
+	.summary-of-me {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  width: 60%;
+	  height:auto;
+		font-weight: 700;
+		margin-left: auto;
+		margin-right: auto;
+	}
