@@ -14,6 +14,7 @@ get_header();
           <div class="summary-of-me">
             <p>Hi I'm Sophie I'm a former Bookshop employee who turned to web development for the challenge, flexibility, and constant learning. I'm a Portland native who loves cats, comedy shows, and travel.</p>
           </div>
+          
         </div>
       </section>
 		</main><!-- #main -->

@@ -30,21 +30,17 @@ nav {
   display: flex;
   height: auto;
   align-items: center;
-
 }
 
 nav ul li {
   list-style: none;
-  display: flex;
-  flex-flow: row;
-  justify-content: flex-start;
-
-
+  display: inline-block;
+  padding: 20px;
 }
 
 nav ul li a {
   font-family: 'Archivo Black';
-  font-size: 1.7em;
+  font-size: 2em;
   color: black;
   text-decoration: none;
   text-transform:  uppercase;
@@ -125,27 +121,36 @@ nav ul li a {
 	background-color: #F7D08A;
 	display: flex;
 	align-items: center;
-	flex-flow: row;
-	justify-content: center;
+  justify-content: center;
 	width: 100%;
 	height: auto;
 	margin: 0;
 	padding: 0;
 }
 	.photo-of-me img {
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	  width: 40%;
+	  width: 30%;
 	  height:auto;
 	  border-radius: 30%;
-	  padding: 100px;
+    padding: 30px;
+    border: 10px solid white;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
 	}
-	.summary-of-me {
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	  width: 50%;
+
+  .photo-of-me {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+	.summary-of-me p {
+    display: flex;
+    align-items:flex-end;
+    flex-direction: row;
+	  width: 40%;
 	  height:auto;
 		font-weight: 700;
 	}
