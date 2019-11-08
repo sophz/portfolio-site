@@ -1,36 +1,21 @@
+
 <?php
 
-/**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
-function portfolio_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'portfolio' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'portfolio' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+function bootstrapstarter_enqueue_styles() {
+    wp_register_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );
+    $dependencies = array('bootstrap');
+    wp_enqueue_style( 'bootstrapstarter-style', get_stylesheet_uri(), $dependencies );
 }
-add_action( 'widgets_init', 'portfolio_widgets_init' );
-/**
- * Enqueue scripts and styles.
- */
-function portfolio_scripts() {
-	wp_enqueue_style( 'portfolio-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
-	wp_enqueue_script( 'portfolio-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+function bootstrapstarter_enqueue_scripts() {
+    $dependencies = array('jquery');
+    wp_enqueue_script('bootstrap', get_template_directory_uri().'/bootstrap/js/bootstrap.min.js', $dependencies, '3.3.6', true );
 }
+
+add_action( 'wp_enqueue_scripts', 'bootstrapstarter_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'bootstrapstarter_enqueue_scripts' );
+
+
 
 /* Custom Post Type */
 function create_custom_post_types() {
@@ -47,3 +32,4 @@ function create_custom_post_types() {
     );
 }
 add_action( 'init', 'create_custom_post_types' );
+?>

@@ -138,14 +138,20 @@ nav ul li a {
 	width: 100%;
 }
 	.photo-of-me img {
-    width: 40%;
+    width: 35%;
 	  height:auto;
 	  border-radius: 30%;
     padding: 30px;
     border: 10px solid white;
     margin: 0;
+    float: left;
 	}
 
+.summary-of-me {
+  width: 50%;
+  float: left;
+  margin-top: 40px;
+}
 /* Contact Page */
 
 .contact-content {
@@ -163,4 +169,14 @@ nav ul li a {
   text-transform: uppercase;
   border: 10px solid white;
   padding: 30px;
+}
+
+/* Projects */
+.work {
+  background-color: #F7D08A;
+  height: 500px;
+}
+
+.content-wrapper {
+    background-color: #F7D08A;
 }

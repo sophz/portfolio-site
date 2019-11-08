@@ -13,12 +13,9 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-      <section class="contact-content">
         <div class="content-wrapper">
-          <h2>Want to work with me?</h2>
-          <a href="#">sophcodes@gmail.com</a>
+
         </div>
-      </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
