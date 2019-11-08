@@ -1,4 +1,14 @@
-<?php get_header(); ?>
+<?php
+/*
+Theme Name: My Portfolio
+Theme URI: https://sophiezinda.com
+Author: Sophie
+Author URI: https://sophiezinda.com
+Description: A basic theme using the Bootstrap framework.
+Version: 1.0
+Text Domain: bootstrapstarter
+*/
+get_header(); ?>
 <div id="ttr_main" class="row">
 <div id="ttr_content" class="col-lg-8 col-sm-8 col-md-8 col-xs-12">
 

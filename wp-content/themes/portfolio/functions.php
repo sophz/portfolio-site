@@ -34,15 +34,15 @@ function portfolio_scripts() {
 
 /* Custom Post Type */
 function create_custom_post_types() {
-    register_post_type( 'work',
+    register_post_type( 'projects',
         array(
             'labels' => array(
-                'name' => __( 'work' ),
-                'singular_name' => __( 'work' )
+                'name' => __( 'projects' ),
+                'singular_name' => __( 'project' )
             ),
             'public' => true,
             'has_archive' => true,
-            'rewrite' => array( 'slug' => 'work' ),
+            'rewrite' => array( 'slug' => 'projects' ),
         )
     );
 }

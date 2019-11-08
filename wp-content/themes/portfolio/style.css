@@ -1,3 +1,13 @@
+/*
+Theme Name: My Portfolio
+Theme URI: https://sophiezinda.com
+Author: Sophie
+Author URI: https://sophiezinda.com
+Description: A basic theme using the Bootstrap framework.
+Version: 1.0
+Text Domain: bootstrapstarter
+*/
+
 body
 {
 text-align: left;
@@ -116,6 +126,9 @@ nav ul li a {
   margin-left: 20px;
 }
 
+.preview-of-work h2 a {
+  color: black;
+}
 /* About Page */
 .about-content {
 	background-color: #F7D08A;
@@ -132,3 +145,22 @@ nav ul li a {
     border: 10px solid white;
     margin: 0;
 	}
+
+/* Contact Page */
+
+.contact-content {
+  background-color: #F7D08A;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-content h2 {
+  font-size: 2em;
+  weight: 700;
+  display: flex;
+  text-transform: uppercase;
+  border: 10px solid white;
+  padding: 30px;
+}
