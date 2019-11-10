@@ -15,18 +15,22 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+
       <section class="about-content">
         <div class="content-wrapper">
-          <div class="box">
-          <div class="photo-of-me col-sm">
+					
+					<div class="wrapper">
+          <div class="photo-of-me">
             <img src="../img/profile.jpg" alt="photo of me" />
           </div>
         </div>
-        <div class="box">
-          <div class="summary-of-me col-sm">
-            <p>Hi I'm Sophie I'm a former Bookshop employee who turned to web development for the challenge, flexibility, and constant learning. I'm a Portland native who loves cats, comedy shows, and travel.</p>
+
+				<div class="wrapper">
+          <div class="summary-of-me">
+            <p>Hi I'm Sophie I'm a former Bookshop employee who turned to web development for the challenge, flexibility, and constant learning. I'm a Portland native who loves cats, comedy shows, and travel. I started taking Skillcrush courses about a year ago and have been coding ever since. When I'm not coding, I enjoy playing with my two adorable cats, reading, plotting new adventures, and learning new skills (my current thing is knitting).</p>
           </div>
         </div>
+
         </div>
       </section>
 		</main><!-- #main -->

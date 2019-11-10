@@ -40,11 +40,14 @@ nav {
   display: flex;
   height: auto;
   align-items: center;
+  justify-content: center;
 }
 
 nav ul li {
   list-style: none;
-  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
 }
 
@@ -76,7 +79,7 @@ nav ul li a {
 }
 
 .intro {
-  width: 30%;
+  width: 50%;
   height: auto;
   background-color: #C5DAC1;
   opacity: .8;
@@ -90,7 +93,7 @@ nav ul li a {
 .preview-of-work {
 	display: flex;
 	align-items: center;
-	Height: 500px;
+	Height: auto;
   width: 100%;
 	background-color: #F7D08A;
 }
@@ -99,18 +102,18 @@ nav ul li a {
 	list-style: none;
 	display: flex;
 	align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
-	flex-flow: row;
-
+	flex-flow: column;
 }
 
 .preview-of-work ul li {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
   background-color: white;
   border: 10px solid white;
+  margin-top: 20px;
 
 }
 
@@ -119,11 +122,15 @@ nav ul li a {
   font-size: 1em;
   text-transform: uppercase;
   font-family: 'Archivo Black';
+  display: flex;
+  justify-content: center;
 }
 
 .preview-of-work h2 {
   text-transform: uppercase;
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .preview-of-work h2 a {
@@ -133,8 +140,9 @@ nav ul li a {
 .about-content {
 	background-color: #F7D08A;
 	display: flex;
-	align-items: flex-start;
-  flex-direction: row;
+	align-items: center;
+  justify-content: center;
+  flex-direction: column;
 	width: 100%;
 }
 	.photo-of-me img {
@@ -144,12 +152,10 @@ nav ul li a {
     padding: 30px;
     border: 10px solid white;
     margin: 0;
-    float: left;
 	}
 
 .summary-of-me {
   width: 50%;
-  float: left;
   margin-top: 40px;
 }
 /* Contact Page */
@@ -180,3 +186,142 @@ nav ul li a {
 .content-wrapper {
     background-color: #F7D08A;
 }
+
+@media only screen and (min-width:768px) {
+  /* Tablet Styles Here */
+
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop Styles here */
+
+  nav {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+  }
+
+  /* Homepage */
+
+  .intro {
+    width: 30%;
+  }
+
+  .preview-of-work {
+  	display: flex;
+  	align-items: center;
+  	Height: 500px;
+    width: 100%;
+  }
+
+  .preview-of-work ul {
+  	list-style: none;
+  	display: flex;
+  	align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  	flex-flow: row;
+
+  }
+
+  .preview-of-work ul li {
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+    background-color: white;
+    border: 10px solid white;
+
+  }
+
+  .preview-of-work h3 {
+    color: black;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: 'Archivo Black';
+  }
+
+  .preview-of-work h2 {
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+
+  .preview-of-work h2 a {
+    color: black;
+  }
+  /* About Page */
+  .about-content {
+  	background-color: #F7D08A;
+  	width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+  }
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  float: left;
+}
+
+.photo-of-me img {
+      width: 200px;
+  	  height:auto;
+  	  border-radius: 30%;
+      padding: 30px;
+      border: 10px solid white;
+      margin: 0;
+  	}
+
+  .summary-of-me {
+    width: 90%;
+    margin-top: 40px;
+
+  }
+  /* Contact Page */
+
+  .contact-content {
+    background-color: #F7D08A;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-content h2 {
+    font-size: 2em;
+    weight: 700;
+    display: flex;
+    text-transform: uppercase;
+    border: 10px solid white;
+    padding: 30px;
+  }
+
+  /* Projects */
+  .projects {
+    background-color: #F7D08A;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+.individual-work {
+  display: flex;
+  align-items: center;
+
+}
+
+.individual-work h3 {
+  display: flex;
+  justify-content: center;
+}
+.content-wrapper {
+      background-color: #F7D08A;
+  }
