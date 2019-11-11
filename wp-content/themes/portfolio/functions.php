@@ -56,9 +56,26 @@ function create_custom_post_types() {
                 'singular_name' => __( 'work' )
             ),
             'public' => true,
-            'has_archive' => true,
-            'rewrite' => array( 'slug' => 'work' ),
         )
     );
+		register_post_type( 'introductions',
+				array(
+						'labels' => array(
+								'name' => __( 'introductions' ),
+								'singular_name' => __( 'introduction' )
+						),
+						'public' => true,
+				)
+		);
+
+		register_post_type( 'what-we-offer',
+				array(
+						'labels' => array(
+								'name' => __( 'what-we-offer' ),
+								'singular_name' => __( 'what-we-offer' )
+						),
+						'public' => true,
+				)
+		);
 }
 add_action( 'init', 'create_custom_post_types' );

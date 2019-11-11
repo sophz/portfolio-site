@@ -14,7 +14,7 @@ Text Domain: bootstrapstarter
     <div class="top-section">
     <div class="intro">
       <div class="background-color">
-  <h2><i class="fas fa-code"></i> Hello, i'm Sophie I build websites.</h2>
+  <h2><i class="fas fa-code"></i> Hello, I'm Sophie I build websites.</h2>
   </div>
 </div>
 </div>

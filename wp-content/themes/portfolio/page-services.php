@@ -16,26 +16,31 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-      <section class="about-content">
+      <section class="services-content">
         <div class="content-wrapper">
 
-					<?php query_posts('posts_per_page=1&post_type=introductions'); ?>
+					<?php query_posts('posts&post_type=what-we-offer'); ?>
 						<?php while ( have_posts() ) : the_post();
-							$my_photo = get_field("my_photo");
+							$service_icon = get_field("service_icon");
+              $service_description = get_field("service_description");
 							$size = "medium";
 						?>
-							<div class="introductions">
-          			<div class="photo-of-me">
+							<div class="services">
+          			<aside class="service-aside">
 												<figure>
-													<?php echo wp_get_attachment_image($my_photo, $size); ?>
+													<?php echo wp_get_attachment_image($service_icon, $size); ?>
 												</figure>
-								</div>
-								<div class="summary-of-me">
-									<p><?php the_content(); ?></p>
+								</aside>
+								<div class="service-description">
+									<h2><?php echo $service_description ?></h2>
 								</div>
 						</div>
 						<?php endwhile; ?>
 						<?php wp_reset_query(); ?>
+            <div class="contact-me">
+            <a href="<?php echo site_url('/contact/') ?>"><h2>contact me</h2>
+          </a>
+          </div>
         </div>
       </section>
 		</main><!-- #main -->
